@@ -41,10 +41,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight"
         >
-          <span className="text-foreground">Hi, I&apos;m </span>
-          <span className="text-gradient">Varsha Bhaskar</span>
+          <span className="text-foreground block">Hi, I&apos;m</span>
+          <span className="text-gradient block">Varsha Bhaskar</span>
         </motion.h1>
 
         <motion.div
