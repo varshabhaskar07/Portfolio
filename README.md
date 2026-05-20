@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Varsha Bhaskar — Portfolio
 
-## Getting Started
+A modern, responsive developer portfolio built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 14** (App Router, static export)
+- **TypeScript** — strict typing throughout
+- **Tailwind CSS** — utility-first styling with custom design tokens
+- **Framer Motion** — subtle, production-grade animations
+- **Lucide React** — icons
+- **Inter + JetBrains Mono** — Google Fonts
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css        # Design tokens, custom utilities
+│   ├── layout.tsx         # Root layout + metadata/SEO
+│   └── page.tsx           # Main page (section assembly)
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.tsx     # Sticky nav with mobile menu
+│   │   └── Footer.tsx     # Simple footer with socials
+│   ├── sections/
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Achievements.tsx
+│   │   ├── CodingProfiles.tsx
+│   │   └── Contact.tsx
+│   └── ui/
+│       ├── badge.tsx
+│       ├── button.tsx
+│       ├── card.tsx
+│       ├── section-heading.tsx
+│       └── social-icons.tsx   # Inline SVG brand icons
+├── data/
+│   └── index.ts           # All content (edit this to update the site)
+├── lib/
+│   └── utils.ts           # cn() helper
+└── types/
+    └── index.ts           # Shared TypeScript interfaces
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> **Note:** Node v25 has a bug with the `.bin/next` shim. The scripts below use `node node_modules/next/dist/bin/next` directly to work around this. This is already configured in `package.json`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Install dependencies
+npm install
 
-## Learn More
+# Start development server
+npm run dev
+# → Open http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+# Production build
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Run production server
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Updating Content
 
-## Deploy on Vercel
+All personal data, projects, skills, experiences, and achievements live in a single file:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/data/index.ts
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit that file to update any content on the site — no need to touch the components.
+
+## Deploying to Vercel (Free)
+
+1. Push this repo to GitHub.
+2. Go to [vercel.com](https://vercel.com) and click **New Project**.
+3. Import your GitHub repo.
+4. Vercel auto-detects Next.js. Click **Deploy**.
+
+> Vercel uses a standard Node version where the `next` binary works correctly, so you can restore the original scripts for deployment:
+
+```json
+"dev": "next dev",
+"build": "next build",
+"start": "next start",
+"lint": "next lint"
+```
+
+## Customising the Design
+
+| What to change | Where |
+|---|---|
+| Colors / theme | `src/app/globals.css` CSS variables |
+| Fonts | `src/app/layout.tsx` |
+| Tailwind tokens | `tailwind.config.ts` |
+| Animations | Framer Motion props in individual section components |
+
+## Contact Form
+
+The contact form (`src/components/sections/Contact.tsx`) shows a success state on submit. To wire it to actually send emails, use:
+
+- [Resend](https://resend.com) — recommended, generous free tier
+- [Formspree](https://formspree.io) — no backend required
+- [EmailJS](https://www.emailjs.com) — client-side sending
