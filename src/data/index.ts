@@ -18,7 +18,7 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/varsha-bhaskar/",
     leetcode: "https://leetcode.com/u/varshabhaskar07/",
     twitter: "https://x.com/Kuchbhikartihun",
-    resume: "#",
+    resume: "https://drive.google.com/file/d/1VeDP_HJhz_OzSxjsn_aaRDUvw93A4E4w/view?usp=sharing",
   },
 };
 
@@ -83,7 +83,23 @@ export const projects: Project[] = [
     description:
       "RAG-based QA and meeting summarization system. Processes transcripts and meeting recordings to extract insights and answer questions using retrieval-augmented generation.",
     tech: ["Python", "LangChain", "Streamlit", "RAG"],
-    github: "https://github.com/varshabhaskar07",
+    github: "https://github.com/varshabhaskar07/Spambot",
+    featured: true,
+  },{
+    title: "Loan.ly",
+    description:
+      "AI-powered cold-calling and lead qualification system for banks. Automates outreach using conversational AI and integrates with Twilio for voice and SMS workflows.",
+    tech: ["Python", "Flask", "Twilio", "LLMs"],
+    github: "https://github.com/varshabhaskar07/Loan.ly",
+    featured: true,
+  },
+
+  {
+    title: "ReelOS",
+    description:
+      "AI Content Operating System that generates complete Instagram Reel briefs — scripts, captions, hooks, hashtags, and B-roll — in ~30 seconds. Lets a single operator manage 10+ content channels by automating cognitive creative work.",
+    tech: ["Python", "FastAPI", "GPT-4o", "React", "Supabase", "ElevenLabs"],
+    github: "https://github.com/varshabhaskar07/ReelOS",
     featured: true,
   },
   {
@@ -91,14 +107,6 @@ export const projects: Project[] = [
     description:
       "AI-powered assessment recommendation system using semantic search and LLM pipelines. Matches candidate profiles to the most relevant SHL assessments intelligently.",
     tech: ["Python", "LLMs", "Semantic Search", "FastAPI"],
-    github: "https://github.com/varshabhaskar07",
-    featured: true,
-  },
-  {
-    title: "Loan.ly",
-    description:
-      "AI-powered cold-calling and lead qualification system for banks. Automates outreach using conversational AI and integrates with Twilio for voice and SMS workflows.",
-    tech: ["Python", "Flask", "Twilio", "LLMs"],
     github: "https://github.com/varshabhaskar07",
     featured: true,
   },
