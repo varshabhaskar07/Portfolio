@@ -107,29 +107,8 @@ export const projects: Project[] = [
     description:
       "AI-powered assessment recommendation system using semantic search and LLM pipelines. Matches candidate profiles to the most relevant SHL assessments intelligently.",
     tech: ["Python", "LLMs", "Semantic Search", "FastAPI"],
-    github: "https://github.com/varshabhaskar07",
+    github: "https://github.com/varshabhaskar07/shl-assessment-recommender",
     featured: true,
-  },
-  {
-    title: "Ollama Chat",
-    description:
-      "Local LLM chat interface with real-time streaming responses. Supports multiple models via Ollama with a clean, responsive UI and conversation history.",
-    tech: ["Python", "Flask", "Ollama", "LLMs"],
-    github: "https://github.com/varshabhaskar07",
-  },
-  {
-    title: "Google Search Clone",
-    description:
-      "Fully responsive Google Search clone built with React and Node.js. Integrates the Google Custom Search API with a pixel-perfect UI and advanced search filters.",
-    tech: ["React", "Tailwind CSS", "Node.js", "Google API"],
-    github: "https://github.com/varshabhaskar07",
-  },
-  {
-    title: "Kernel Development",
-    description:
-      "Custom kernel built from scratch in C implementing memory management, process scheduling, and system calls. Demonstrates deep understanding of OS internals.",
-    tech: ["C", "Operating Systems", "Assembly"],
-    github: "https://github.com/varshabhaskar07",
   },
 ];
 
@@ -163,6 +142,13 @@ export const achievements: Achievement[] = [
 
 export const codingProfiles: CodingProfile[] = [
   {
+    platform: "LinkedIn",
+    username: "varsha-bhaskar",
+    url: "https://www.linkedin.com/in/varsha-bhaskar/",
+    icon: "linkedin",
+    description: "Professional network & experience",
+  },
+  {
     platform: "GitHub",
     username: "varshabhaskar07",
     url: "https://github.com/varshabhaskar07",
@@ -176,13 +162,7 @@ export const codingProfiles: CodingProfile[] = [
     icon: "code",
     description: "DSA practice & problem solving",
   },
-  {
-    platform: "LinkedIn",
-    username: "varsha-bhaskar",
-    url: "https://www.linkedin.com/in/varsha-bhaskar/",
-    icon: "linkedin",
-    description: "Professional network & experience",
-  },
+  
   {
     platform: "Twitter / X",
     username: "@Kuchbhikartihun",
