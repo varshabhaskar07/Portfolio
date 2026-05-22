@@ -43,7 +43,7 @@ export function Projects() {
         <div>
           <div className="flex items-center gap-2 mb-6">
             <span className="text-xs font-semibold tracking-widest uppercase text-muted-foreground/60">
-              Other Projects
+              {/* Other Projects */}
             </span>
           </div>
           <div className="grid md:grid-cols-3 gap-5">
