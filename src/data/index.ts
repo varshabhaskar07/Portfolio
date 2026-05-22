@@ -102,14 +102,6 @@ export const projects: Project[] = [
     github: "https://github.com/varshabhaskar07/ReelOS",
     featured: true,
   },
-  {
-    title: "SHL Assessment Recommender",
-    description:
-      "AI-powered assessment recommendation system using semantic search and LLM pipelines. Matches candidate profiles to the most relevant SHL assessments intelligently.",
-    tech: ["Python", "LLMs", "Semantic Search", "FastAPI"],
-    github: "https://github.com/varshabhaskar07/shl-assessment-recommender",
-    featured: true,
-  },
 ];
 
 export const achievements: Achievement[] = [
