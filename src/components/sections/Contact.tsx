@@ -15,24 +15,6 @@ const socials = [
     value: personalInfo.email,
     href: `mailto:${personalInfo.email}`,
   },
-  {
-    icon: GithubIcon,
-    label: "GitHub",
-    value: "varshabhaskar07",
-    href: personalInfo.links.github,
-  },
-  {
-    icon: LinkedinIcon,
-    label: "LinkedIn",
-    value: "varsha-bhaskar",
-    href: personalInfo.links.linkedin,
-  },
-  {
-    icon: TwitterXIcon,
-    label: "Twitter / X",
-    value: "@Kuchbhikartihun",
-    href: personalInfo.links.twitter,
-  },
 ];
 
 export function Contact() {
